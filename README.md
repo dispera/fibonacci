@@ -6,4 +6,4 @@ You enter a limit and the program will calculate a Fibonacci sequence up to that
 Made while learning Ruby, after I found out this sequences existed and had a name.
 Feel free to contribute / correct / improve :)
 
-[Diego Spera](http://www.nexiit.com)
+[Diego Spera](https://br.linkedin.com/in/diegospera)
