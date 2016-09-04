@@ -9,19 +9,19 @@ limit = gets.chomp.to_i
 #puts "Not an integer" unless (limit.is_a? Integer)
 
 def fibonacci(max)
-  i = [0,0,1]
+  i = [0,1]
   total = 1
-  print "#{i[2]}, "
-  until i[2] >= max do
-    i[1] = i[2]
-    i[2] += i[0]
-    unless (i[2] + i[0]) >= max
+  print "#{i[1]}, "
+  until i[1] >= max do
+    #i[1] = i[2]
+    i[1] += i[0]
+    unless (i[1] + i[0]) >= max
       total += 1
-      print "#{i[2]}, "
+      print "#{i[1]}, "
       i[0] = i[1]
     else
       total += 1
-      puts "#{i[2]}."
+      puts "#{i[1]}."
       puts "Amount of numbers in this sequence: #{total.to_s}"
       break
     end
