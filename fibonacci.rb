@@ -10,7 +10,7 @@ limit = gets.chomp.to_i
 
 def fibonacci(max)
   i = [0,0,1]
-  total = 0
+  total = 1
   print "#{i[2]}, "
   until i[2] >= max do
     i[1] = i[2]
