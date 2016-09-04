@@ -10,15 +10,16 @@ limit = gets.chomp.to_i
 
 def fibonacci(max)
   i = 1
-  last = 0
-  total = 0
+  previous_i = 0
+  total = 1
+  print "#{i}, "
+
   until i >= max do
-    previous_i = i
-    i += last
+    i += previous_i
     unless (i + previous_i) >= max
       total += 1
       print "#{i}, "
-      last = previous_i
+      previous_i = i
     else
       total += 1
       puts "#{i}."
