@@ -8,12 +8,11 @@ print "Enter limit: "
 limit = gets.chomp.to_i
 #puts "Not an integer" unless (limit.is_a? Integer)
 
-def fibonacci(max)
+def fibonacci (max, total=1)
   i = [0,1]
-  total = 1
   print "#{i[1]}, "
+
   until i[1] >= max do
-    #i[1] = i[2]
     i[1] += i[0]
     unless (i[1] + i[0]) >= max
       total += 1
